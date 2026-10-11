@@ -1,5 +1,10 @@
+// Lesson 1: Basics — types, variables, strings, conditionals, loops, arrays, methods
+// Run with:  java Lesson1_Basics.java
+
 public class Lesson1_Basics {
 
+    // A "static" method belongs to the class itself (like a plain function in JS).
+    // Every parameter and the return value must declare a type.
     static int add(int a, int b) {
         return a + b;
     }
@@ -8,6 +13,7 @@ public class Lesson1_Basics {
         return "Hello " + a + "!";
     }
 
+     // Every Java program starts at main(). This is the entry point.
     public static void main(String[] args) {
 
          // ---- 1. Variables and primitive types ----
@@ -85,3 +91,10 @@ public class Lesson1_Basics {
 
     }
 }
+
+// Static vs. instance methods
+
+// Java has two kinds of methods:
+
+// Instance method (no static) belongs to each object. It runs on one specific object and can read that object’s fields through this.
+// Static method belongs to the class itself. It runs without any object, so there is no this.
